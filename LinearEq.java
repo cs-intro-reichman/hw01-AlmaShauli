@@ -14,13 +14,13 @@ public class LinearEq {
 		double c = Integer.parseInt(args[2]);
 
 		// Print the linear equation
-		// System.out.println(a + " * x + " + b + " = " + c);
+		System.out.println(a + " * " + "x" + " + " + b + " = " + c);
 
 		// Calculate the solution to the equation
 		double x = (c - b) / a;
 
 		// Print the solution
-		System.out.println(a + " * x + " + b + " = " + c + "\nx = " + x);
+		System.out.println("x = " + x);
 
 	}
 }
