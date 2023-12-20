@@ -8,14 +8,19 @@ public class LinearEq {
 	// Put your code here
 	public static void main(String[] args) {
 
+		// Receiving numbers
 		double a = Double.parseDouble(args[0]);
 		double b = Double.parseDouble(args[1]);
 		double c = Double.parseDouble(args[2]);
 
+		// Print the linear equation
 		System.out.println(a + " * x + " + b + " = " + c);
 
+		// Calculate the solution to the equation
 		double x = (c - b) / a;
-		System.out.println("X = " + x);
+
+		// Print the solution
+		System.out.println("x = " + x);
 
 	}
 }

@@ -6,21 +6,31 @@
 public class Triangle {
 	public static void main(String[] args) {
 		// Put your code here
+
+		// Receiving numbers
 		int edgeOne = Integer.parseInt(args[0]);
 		int edgeTwo = Integer.parseInt(args[1]);
 		int edgeThree = Integer.parseInt(args[2]);
-		boolean triangle;
 
+		// Determines the value of triangle
+		boolean triangle = true;
+
+		// Check if side 1 + side 2 smaller then side 3
 		if (((edgeOne + edgeTwo) < edgeThree) || ((edgeOne + edgeTwo) == edgeThree)) {
 			triangle = false;
-		} else if (((edgeOne + edgeThree) < edgeTwo) || ((edgeOne + edgeThree) == edgeTwo)) {
+		} else
+
+		// Check if side 1 + side 3 smaller then side 2
+		if (((edgeOne + edgeThree) < edgeTwo) || ((edgeOne + edgeThree) == edgeTwo)) {
 			triangle = false;
-		} else if (((edgeThree + edgeTwo) < edgeOne) || ((edgeThree + edgeTwo) == edgeOne)) {
+		} else
+
+		// Check if side 2 + side 3 smaller then side 1
+		if (((edgeThree + edgeTwo) < edgeOne) || ((edgeThree + edgeTwo) == edgeOne)) {
 			triangle = false;
-		} else {
-			triangle = true;
 		}
 
+		// Print each sides and if it form triangle
 		System.out.println(edgeOne + ", " + edgeTwo + ", " + edgeThree + ": " + triangle);
 
 	}
